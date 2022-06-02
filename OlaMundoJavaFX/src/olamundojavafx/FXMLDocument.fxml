@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="olamundojavafx.FXMLDocumentController">
+   <children>
+      <Button fx:id="btnClick" contentDisplay="CENTER" layoutX="134.0" layoutY="135.0" mnemonicParsing="false" onAction="#clicouBotao" text="Botão" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" />
+      <Label fx:id="lblMensagem" alignment="CENTER" contentDisplay="CENTER" layoutX="81.0" layoutY="77.0" text="Não clique no botão" textAlignment="CENTER" textFill="RED">
+         <effect>
+            <Glow level="0.32" />
+         </effect>
+         <font>
+            <Font name="Lato Light" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
