@@ -17,6 +17,8 @@ public class OperadorCondicional {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        // condicional simples
         Scanner teclado = new Scanner(System.in);
         System.out.print("Nota 1: ");
         float n1 = teclado.nextFloat();
@@ -27,6 +29,7 @@ public class OperadorCondicional {
         System.out.print("Status: ");
         if(media >= 7)
             System.out.println("APROVADO");
+        // condicional composta
         else
             System.out.println("Exame");
     }
