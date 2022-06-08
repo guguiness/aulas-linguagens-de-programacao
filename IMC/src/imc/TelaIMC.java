@@ -44,6 +44,7 @@ public class TelaIMC extends javax.swing.JFrame {
         lblCondicao = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Projeto IMC");
 
         grpSexo.add(rdbtnFeminino);
         rdbtnFeminino.setSelected(true);
@@ -54,7 +55,7 @@ public class TelaIMC extends javax.swing.JFrame {
 
         jLabel1.setText("Sexo:");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setText("Calculadora de IMC");
 
         jLabel3.setText("Peso (Kg):");
@@ -121,7 +122,7 @@ public class TelaIMC extends javax.swing.JFrame {
                     .addComponent(lblCondicao, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(81, 81, 81)
+                .addGap(65, 65, 65)
                 .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -133,9 +134,9 @@ public class TelaIMC extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(21, 21, 21)
                 .addComponent(jLabel2)
-                .addGap(26, 26, 26)
+                .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rdbtnFeminino)
                     .addComponent(rdbtnMasculino)
@@ -152,7 +153,7 @@ public class TelaIMC extends javax.swing.JFrame {
                     .addComponent(btnLimpar))
                 .addGap(34, 34, 34)
                 .addComponent(lblIMC, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
                 .addComponent(lblCondicao, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19))
         );
