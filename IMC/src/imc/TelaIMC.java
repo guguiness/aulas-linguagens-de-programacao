@@ -44,6 +44,7 @@ public class TelaIMC extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         grpSexo.add(rdbtnFeminino);
+        rdbtnFeminino.setSelected(true);
         rdbtnFeminino.setText("Feminino");
 
         grpSexo.add(rdbtnMasculino);
@@ -58,6 +59,11 @@ public class TelaIMC extends javax.swing.JFrame {
         jLabel4.setText("Altura (m):");
 
         btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
 
         btnLimpar.setText("Limpar");
 
@@ -128,6 +134,10 @@ public class TelaIMC extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        String sexo = (rdbtnFeminino.isSelected()) ? "feminino" : "masculino";
+    }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
      * @param args the command line arguments
