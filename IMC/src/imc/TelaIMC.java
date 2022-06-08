@@ -143,9 +143,26 @@ public class TelaIMC extends javax.swing.JFrame {
         float peso = Float.parseFloat(txtPeso.getText());                       // atribui o peso convertido para float
         float altura = Float.parseFloat(txtAltura.getText());                   // atribui a altura convertida para float
         float imc;                                                              // declara a váriavel do IMC
+        String condicao = new String();
         
         // cálculo do IMC
         imc = peso / (float) (pow(altura, 2));      // faz o cast da exponenciação, pois esta retorna um valor do tipo double
+        
+        // condição física
+        if(sexo == "feminino") {                    // para o sexo feminino
+            if(imc < 19.1)
+                condicao = "Abaixo do peso ideal";
+            else if(imc >= 19.1 && imc <= 25.8)
+                condicao = "No peso ideal";
+            else if(imc > 25.8 && imc <= 27.3)
+                condicao = "Marginalmente acima do peso ideal";
+            else if(imc > 32.3)
+                condicao = "Obeso";
+            else                                    // condição que verifica se o peso está entre 27.3 e 32.3 (incluso)
+                condicao = "Acima do peso ideal";
+        } else {                                    // para o sexo masculino
+            
+        }
         
         // saída do programa
         lblIMC.setText("IMC: " + Float.toString(imc));
