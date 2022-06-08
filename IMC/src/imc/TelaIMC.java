@@ -149,7 +149,7 @@ public class TelaIMC extends javax.swing.JFrame {
         imc = peso / (float) (pow(altura, 2));      // faz o cast da exponenciação, pois esta retorna um valor do tipo double
         
         // condição física
-        if(sexo == "feminino") {                    // para o sexo feminino
+        if(sexo.equals("feminino")) {                    // para o sexo feminino
             if(imc < 19.1)
                 condicao = "Abaixo do peso ideal";
             else if(imc >= 19.1 && imc <= 25.8)
