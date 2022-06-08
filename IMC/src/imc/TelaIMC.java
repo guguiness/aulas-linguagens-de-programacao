@@ -136,7 +136,8 @@ public class TelaIMC extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
-        String sexo = (rdbtnFeminino.isSelected()) ? "feminino" : "masculino";
+        String sexo = (rdbtnFeminino.isSelected()) ? "feminino" : "masculino"; // atribui o sexo marcado no radio button
+        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
