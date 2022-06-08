@@ -142,10 +142,13 @@ public class TelaIMC extends javax.swing.JFrame {
         String sexo = (rdbtnFeminino.isSelected()) ? "feminino" : "masculino";  // atribui o sexo marcado no radio button
         float peso = Float.parseFloat(txtPeso.getText());                       // atribui o peso convertido para float
         float altura = Float.parseFloat(txtAltura.getText());                   // atribui a altura convertida para float
-        float imc = 0;                                                          // inicializa a váriavel do IMC
+        float imc;                                                              // declara a váriavel do IMC
         
         // cálculo do IMC
-        imc = peso / (float) (pow(altura, 2));      // faz o cast do exponenciação, pois esta retorna um valor do tipo double
+        imc = peso / (float) (pow(altura, 2));      // faz o cast da exponenciação, pois esta retorna um valor do tipo double
+        
+        // saída do programa
+        lblIMC.setText("IMC: " + Float.toString(imc));
         
         
     }//GEN-LAST:event_btnCalcularActionPerformed
