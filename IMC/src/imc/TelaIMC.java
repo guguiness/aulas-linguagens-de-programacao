@@ -145,6 +145,7 @@ public class TelaIMC extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // botão Calcular
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // declaração de variáveis
         String sexo = (rdbtnFeminino.isSelected()) ? "feminino" : "masculino";  // atribui o sexo marcado no radio button
@@ -187,9 +188,15 @@ public class TelaIMC extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnCalcularActionPerformed
 
+    // botão Limpar
     private void btnLimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimparActionPerformed
+        // limpa campos de texto
         txtPeso.setText("");
         txtAltura.setText("");
+        
+        // limpa labels
+        lblIMC.setText("");
+        lblCondicao.setText("");
     }//GEN-LAST:event_btnLimparActionPerformed
 
     /**
