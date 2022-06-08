@@ -27,6 +27,7 @@ public class TelaIMC extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        grpSexo = new javax.swing.ButtonGroup();
         rdbtnFeminino = new javax.swing.JRadioButton();
         rdbtnMasculino = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
@@ -42,8 +43,10 @@ public class TelaIMC extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        grpSexo.add(rdbtnFeminino);
         rdbtnFeminino.setText("Feminino");
 
+        grpSexo.add(rdbtnMasculino);
         rdbtnMasculino.setText("Masculino");
 
         jLabel1.setText("Sexo:");
@@ -164,6 +167,7 @@ public class TelaIMC extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalcular;
     private javax.swing.JButton btnLimpar;
+    private javax.swing.ButtonGroup grpSexo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
