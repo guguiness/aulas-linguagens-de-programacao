@@ -137,6 +137,8 @@ public class TelaIMC extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         String sexo = (rdbtnFeminino.isSelected()) ? "feminino" : "masculino"; // atribui o sexo marcado no radio button
+        float peso = Float.parseFloat(txtPeso.getText());        // atribui o peso convertido para float
+        float altura = Float.parseFloat(txtAltura.getText());    // atribui a altura convertida para float
         
     }//GEN-LAST:event_btnCalcularActionPerformed
 
