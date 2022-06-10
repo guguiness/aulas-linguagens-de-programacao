@@ -212,6 +212,11 @@ public class TelaCalculadora extends javax.swing.JFrame {
         int c = Integer.parseInt(txtC.getText());
         float delta;
         
+        // substitui os valores do delta pelos valores da equação de grau 2
+        lblA.setText(Integer.toString(a));
+        lblB.setText(Integer.toString(b));
+        lblC.setText(Integer.toString(c));
+        
         
     }//GEN-LAST:event_btnCalcularActionPerformed
 
