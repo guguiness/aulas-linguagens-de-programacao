@@ -229,6 +229,10 @@ public class TelaCalculadora extends javax.swing.JFrame {
         else 
             raiz = "Não existem raízes Reais";
         
+        // saída do programa
+        lblDelta.setText(Float.toString(delta));
+        lblRaizes.setText(raiz);
+        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
