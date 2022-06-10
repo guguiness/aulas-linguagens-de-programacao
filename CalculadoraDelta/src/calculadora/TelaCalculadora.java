@@ -207,6 +207,11 @@ public class TelaCalculadora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        int a = Integer.parseInt(txtA.getText());
+        int b = Integer.parseInt(txtB.getText());
+        int c = Integer.parseInt(txtC.getText());
+        float delta;
+        
         
     }//GEN-LAST:event_btnCalcularActionPerformed
 
