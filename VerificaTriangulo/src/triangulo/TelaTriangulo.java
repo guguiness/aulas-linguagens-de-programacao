@@ -49,33 +49,48 @@ public class TelaTriangulo extends javax.swing.JFrame {
 
         sldrA.setPaintTicks(true);
         sldrA.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        sldrA.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldrAStateChanged(evt);
+            }
+        });
         getContentPane().add(sldrA, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, -1, -1));
 
         lblValorA.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
         lblValorA.setText("50");
-        getContentPane().add(lblValorA, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 20, 20));
+        getContentPane().add(lblValorA, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 30, 20));
 
         jLabel2.setText("Segmento B:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
 
         sldrB.setPaintTicks(true);
         sldrB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        sldrB.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldrBStateChanged(evt);
+            }
+        });
         getContentPane().add(sldrB, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, -1, -1));
 
         lblValorB.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
         lblValorB.setText("50");
-        getContentPane().add(lblValorB, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 20, 20));
+        getContentPane().add(lblValorB, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, 30, 20));
 
         jLabel3.setText("Segmento C:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         sldrC.setPaintTicks(true);
         sldrC.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        sldrC.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sldrCStateChanged(evt);
+            }
+        });
         getContentPane().add(sldrC, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, -1, -1));
 
         lblValorC.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
         lblValorC.setText("50");
-        getContentPane().add(lblValorC, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 20, 20));
+        getContentPane().add(lblValorC, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 30, 20));
 
         btnVerificar.setText("Verificar");
         btnVerificar.addActionListener(new java.awt.event.ActionListener() {
@@ -107,6 +122,18 @@ public class TelaTriangulo extends javax.swing.JFrame {
                 if((Math.abs(a-c) < b) && (a+c > b))    // |a-c| < b < a+c
                     triangulo = true;
     }//GEN-LAST:event_btnVerificarActionPerformed
+
+    private void sldrAStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldrAStateChanged
+        lblValorA.setText(Integer.toString(sldrA.getValue()));
+    }//GEN-LAST:event_sldrAStateChanged
+
+    private void sldrBStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldrBStateChanged
+        lblValorB.setText(Integer.toString(sldrB.getValue()));
+    }//GEN-LAST:event_sldrBStateChanged
+
+    private void sldrCStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldrCStateChanged
+        lblValorC.setText(Integer.toString(sldrC.getValue()));
+    }//GEN-LAST:event_sldrCStateChanged
 
     /**
      * @param args the command line arguments
