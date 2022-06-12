@@ -95,7 +95,9 @@ public class TelaTriangulo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
-        
+        int a = sldrA.getValue();
+        int b = sldrB.getValue();
+        int c = sldrC.getValue();
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     /**
