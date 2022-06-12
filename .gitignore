@@ -5,3 +5,5 @@
 /IMC/build/
 /CalculadoraDelta/nbproject/private/
 /CalculadoraDelta/build/
+*.zip
+*.rar
