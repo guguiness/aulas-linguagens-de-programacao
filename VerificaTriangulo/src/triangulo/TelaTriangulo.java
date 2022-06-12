@@ -125,13 +125,24 @@ public class TelaTriangulo extends javax.swing.JFrame {
         int a = sldrA.getValue();
         int b = sldrB.getValue();
         int c = sldrC.getValue();
-        boolean triangulo = false;
+        boolean triangulo = false;      // inicializa com falso, para caso as condições não sejam satisfeitas
+        String tipo = new String();
         
         // condições para verficar se é um triângulo
         if((Math.abs(a-b) < c) && (a+b > c))            // |a-b| < c < a+b
             if((Math.abs(b-c) < a) && (b+c > a))        // |b-c| < a < b+c
                 if((Math.abs(a-c) < b) && (a+c > b))    // |a-c| < b < a+c
                     triangulo = true;
+        
+        // condições para verificar tipo de triângulo
+        if(triangulo) {
+            if((a==b) && (b==c))
+                tipo = "Equilátero";
+            else if((a!=b) && (b!=c) && (a!=c))
+                tipo = "Escaleno";
+            else
+                tipo = "Isósceles";
+        }
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     // altera as labels de acordo com o estado atual de cada slider
