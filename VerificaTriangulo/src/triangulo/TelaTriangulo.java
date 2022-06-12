@@ -125,7 +125,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
         int a = sldrA.getValue();
         int b = sldrB.getValue();
         int c = sldrC.getValue();
-        boolean triangulo;
+        boolean triangulo = false;
         
         // condições para verficar se é um triângulo
         if((Math.abs(a-b) < c) && (a+b > c))            // |a-b| < c < a+b
