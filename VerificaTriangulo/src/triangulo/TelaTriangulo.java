@@ -44,6 +44,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
         btnVerificar = new javax.swing.JButton();
         lblFormaTriangulo = new javax.swing.JLabel();
         lblTipoTriangulo = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Verificador de Triângulo");
@@ -111,11 +112,19 @@ public class TelaTriangulo extends javax.swing.JFrame {
         });
         getContentPane().add(btnVerificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 150, 80, 30));
 
-        lblFormaTriangulo.setText("jLabel4");
-        getContentPane().add(lblFormaTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 210, -1, -1));
+        lblFormaTriangulo.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblFormaTriangulo.setForeground(new java.awt.Color(0, 153, 204));
+        lblFormaTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(lblFormaTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 220, 30));
 
-        lblTipoTriangulo.setText("jLabel4");
-        getContentPane().add(lblTipoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, -1, -1));
+        lblTipoTriangulo.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblTipoTriangulo.setForeground(new java.awt.Color(255, 0, 0));
+        lblTipoTriangulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(lblTipoTriangulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 400, 30));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/128x128-esquadro.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, 130, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -208,6 +217,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel lblFormaTriangulo;
     private javax.swing.JLabel lblTipoTriangulo;
     private javax.swing.JLabel lblValorA;
