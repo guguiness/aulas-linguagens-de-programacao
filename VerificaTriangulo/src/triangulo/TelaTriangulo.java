@@ -95,9 +95,17 @@ public class TelaTriangulo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
+        // declaração de variáveis
         int a = sldrA.getValue();
         int b = sldrB.getValue();
         int c = sldrC.getValue();
+        boolean triangulo;
+        
+        // condições para verficar se é um triângulo
+        if((Math.abs(a-b) < c) && (a+b > c))            // |a-b| < c < a+b
+            if((Math.abs(b-c) < a) && (b+c > a))        // |b-c| < a < b+c
+                if((Math.abs(a-c) < b) && (a+c > b))    // |a-c| < b < a+c
+                    triangulo = true;
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     /**
