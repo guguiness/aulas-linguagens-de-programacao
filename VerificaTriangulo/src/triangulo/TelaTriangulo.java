@@ -143,6 +143,16 @@ public class TelaTriangulo extends javax.swing.JFrame {
             else
                 tipo = "Isósceles";
         }
+        
+        // saída do programa
+        if(triangulo) {
+            lblFormaTriangulo.setText("Forma um triângulo");
+            lblTipoTriangulo.setText(tipo);
+        } else {
+            lblFormaTriangulo.setText("Não forma um triângulo");
+            lblTipoTriangulo.setText("-");
+        }
+            
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     // altera as labels de acordo com o estado atual de cada slider
